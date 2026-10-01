@@ -27,6 +27,14 @@ The global instructions and skills I use with Claude Code and the GitHub Copilot
 | `unslop` | Strips AI tells from writing |
 | `why` | Digs through git, tickets, docs and chat to find out why code is shaped the way it is |
 
+`routines/` has the prompts for my scheduled Claude desktop tasks:
+
+| Routine | Schedule | What it does |
+|---------|----------|--------------|
+| `issue-triage` | Weekdays, hourly 07:30 to 17:30 | Triages new and updated Music Assistant issues, reproduces and fixes what it can, and keeps a report board |
+| `pr-review` | Hourly | Reviews changed PRs with Copilot, auto-approves safe provider-only PRs, and keeps a status matrix |
+| `triage-ma-nightly` | Daily at 05:00 | Scans the last 24 hours of logs from the MA nightly add-on for errors and event loop blocks |
+
 Some skills point at my own setup (paths, the Music Assistant repo), so expect to adjust those.
 
 ## Using a skill
